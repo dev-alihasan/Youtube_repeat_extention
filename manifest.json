@@ -1,0 +1,19 @@
+
+{
+  "manifest_version": 3,
+  "name": "YouTube Repeater",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "yt-btn-img.png",
+      "48": "yt-btn-img.png",
+      "128": "yt-btn-img.png"
+    }
+  },
+  "permissions": ["scripting"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
